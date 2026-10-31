@@ -45,7 +45,7 @@ export function Reviews() {
 
       <ul className="mt-12 scrollbar-none flex snap-x snap-mandatory gap-4 overflow-x-auto px-4 pb-2 md:px-8 lg:justify-center">
         {reviews.map((r) => (
-          <li key={r.id} className="w-80 shrink-0 snap-start md:w-96">
+          <li key={r.id} className="relative w-80 shrink-0 snap-start md:w-96">
             <article className="flex h-full flex-col gap-4 rounded-card bg-cream-50 p-6 text-ink-900">
               <Stars value={r.rating} />
               <p className="flex-1 leading-relaxed" lang={r.lang}>
