@@ -1,0 +1,190 @@
+{
+  "meta": {
+    "title": "The Kaffe Loopie — Coffee. Brunch. Sweet Moments. | Bakı",
+    "description": "İçərişəhərin yanında qəhvə, bütün gün səhər yeməyi və ev desertləri. Google-da 4.9 ★. Hər gün 07:00–23:00. Heyvan dostu."
+  },
+  "nav": {
+    "menu": "Menyu",
+    "about": "Haqqımızda",
+    "reviews": "Rəylər",
+    "visit": "Ünvan",
+    "contact": "Rezervasiya",
+    "order": "Sifariş et",
+    "openMenu": "Menyunu aç",
+    "closeMenu": "Menyunu bağla",
+    "skip": "Məzmuna keç",
+    "language": "Dil",
+    "themeLight": "Açıq rejim",
+    "themeDark": "Qaranlıq rejim",
+    "home": "Ana səhifə"
+  },
+  "intro": { "skip": "Keç" },
+  "placeholder": { "price": "[QİYMƏT]", "email": "[E-POÇT]" },
+  "hero": {
+    "eyebrow": "İçərişəhər · Bakı",
+    "ctaMenu": "Menyuya bax",
+    "ctaDirections": "Yol tarifi",
+    "rating": "{count} Google rəyi",
+    "scroll": "aşağı sürüşdür"
+  },
+  "news": {
+    "eyebrow": "yeniliklər",
+    "title": "Bu həftə bizdə",
+    "halloweenTitle": "Halloween at The KAFFE",
+    "halloweenText": "Oktyabrın mövsümi içkisi.",
+    "caramelTitle": "Caramel Kiss",
+    "caramelText": "Yeni sevimliniz ilə tanış olun.",
+    "sezarTitle": "Sezar roll",
+    "sezarText": "Lavaşda Sezar və təzə salat — səhər yeməyi menyusunda."
+  },
+  "split": {
+    "dessertsEyebrow": "Signature Desserts",
+    "dessertsTitle": "Evdə hazırlanan desertlər",
+    "dessertsText": "Tiramisu, panna kotta, maqnoliya pudinqi və enerji topları. Qonaqlarımız tiramisunu \"Bakının ən yaxşısı\" adlandırır.",
+    "dessertsCta": "Desertlərə bax",
+    "breakfastEyebrow": "All-Day Breakfast",
+    "breakfastTitle": "Səhər yeməyi saata baxmır",
+    "breakfastText": "Şakşuka, Rice Bowl, Sezar roll və kruassan — 07:00-dan 23:00-dək, bütün gün.",
+    "breakfastCta": "Səhər yeməyi menyusu"
+  },
+  "why": {
+    "eyebrow": "niyə məhz biz?",
+    "title": "Evdəki kimi rahat",
+    "coffeeTitle": "Təzə qəhvə, hər fincanda",
+    "coffeeLabel": "Qəhvə",
+    "catsTitle": "Küçədən övladlığa götürdüyümüz pişiklər",
+    "catsLabel": "Pişiklər",
+    "atmosphereTitle": "İsti, rahat atmosfer",
+    "atmosphereLabel": "Atmosfer",
+    "cityTitle": "İçərişəhərə bir addım",
+    "cityLabel": "Məkan"
+  },
+  "menu": {
+    "eyebrow": "menyu",
+    "title": "Menyumuz",
+    "search": "Axtar…",
+    "searchLabel": "Menyuda axtarış",
+    "all": "Hamısı",
+    "cat_drinks": "İçkilər",
+    "cat_breakfast": "Səhər yeməyi",
+    "cat_desserts": "Desertlər",
+    "tag_vegan": "Vegan",
+    "tag_sugarFree": "Şəkərsiz",
+    "tag_new": "Yeni",
+    "tag_popular": "Populyar",
+    "empty": "Heç nə tapılmadı.",
+    "sizes": "Ölçü",
+    "ingredients": "Tərkib",
+    "close": "Bağla",
+    "noDescription": "Ətraflı məlumat tezliklə əlavə olunacaq.",
+    "currency": "₼",
+    "fullMenu": "Tam menyu Instagram-da",
+    "order": "Bolt Food ilə sifariş"
+  },
+  "about": {
+    "eyebrow": "haqqımızda",
+    "title": "Fresh coffee, homemade desserts, and a place that feels like home in Baku.",
+    "p1": "The Kaffe Loopie İstiqlaliyyət küçəsində, İçərişəhərin bir addımlığında yerləşən kiçik və isti qəhvəxanadır. Gün burada qəhvə ilə başlayır, səhər yeməyi bütün gün davam edir, desertlər isə evdə hazırlanır.",
+    "p2": "Biz heyvan dostuyuq: pişiklərimizi küçədən övladlığa götürürük və onlar tez-tez qonaqlarımıza yoldaşlıq edir. 🐾",
+    "statRating": "Google reytinqi",
+    "statReviews": "rəy",
+    "statFollowers": "Instagram izləyicisi",
+    "statHours": "hər gün"
+  },
+  "reviews": {
+    "eyebrow": "rəylər",
+    "title": "Qonaqlarımız nə deyir",
+    "basedOn": "{count} rəy əsasında",
+    "write": "Google-da rəy yaz",
+    "source_google": "Google",
+    "source_instagram": "Instagram",
+    "prev": "Əvvəlki",
+    "next": "Növbəti"
+  },
+  "rewards": {
+    "eyebrow": "loyallıq",
+    "title": "The Kaffe Rewards",
+    "soon": "Tezliklə",
+    "text": "Hər fincanla ulduz toplayın, sevimli desertinizi hədiyyə qazanın. Proqram hazırlanır — ilk xəbəri Instagram-da verəcəyik.",
+    "perk1": "Hər alışa ulduz",
+    "perk2": "Ad gününə hədiyyə",
+    "perk3": "Yeniliklər ilk sizə",
+    "notify": "Instagram-da izlə"
+  },
+  "contact": {
+    "eyebrow": "əlaqə",
+    "title": "Masa ayırın və ya fikrinizi yazın",
+    "tabReserve": "Masa rezervi",
+    "tabFeedback": "Rəy yaz",
+    "callInstead": "Və ya zəng edin:"
+  },
+  "feedback": {
+    "name": "Adınız",
+    "email": "E-poçt",
+    "rating": "Qiymətiniz",
+    "message": "Mesajınız",
+    "submit": "Göndər",
+    "sending": "Göndərilir…",
+    "successTitle": "Təşəkkür edirik!",
+    "successText": "Mesajınız bizə çatdı. Növbəti fincanınızı gözləyirik.",
+    "again": "Yeni mesaj"
+  },
+  "reservation": {
+    "date": "Tarix",
+    "time": "Saat",
+    "guests": "Nəfər",
+    "name": "Adınız",
+    "phone": "Telefon",
+    "note": "Qeyd (istəyə görə)",
+    "submit": "Masa ayır",
+    "sending": "Göndərilir…",
+    "successTitle": "Sorğunuz qəbul edildi",
+    "successText": "{name}, {date} · {time} üçün {guests} nəfərlik sorğunuzu aldıq. Tezliklə zəng edib təsdiqləyəcəyik.",
+    "again": "Yeni rezervasiya",
+    "less": "Azalt",
+    "more": "Artır"
+  },
+  "errors": {
+    "name": "Ən azı 2 hərf daxil edin",
+    "email": "Düzgün e-poçt daxil edin",
+    "rating": "Ulduz seçin",
+    "message": "Ən azı 10 simvol yazın",
+    "phone": "Düzgün telefon nömrəsi daxil edin",
+    "date": "Bu gün və ya sonrakı tarixi seçin",
+    "time": "Saat seçin",
+    "guests": "1–12 nəfər",
+    "server": "Xəta baş verdi. Bir az sonra yenidən cəhd edin."
+  },
+  "visit": {
+    "eyebrow": "ünvan",
+    "title": "Bizi ziyarət edin",
+    "address": "Ünvan",
+    "contact": "Əlaqə",
+    "hours": "İş saatları",
+    "directions": "Yol tarifi al",
+    "call": "Zəng et",
+    "order": "Bolt Food",
+    "openNow": "İndi açıqdır",
+    "closed": "Bağlıdır",
+    "closesAt": "{time}-da bağlanır",
+    "opensAt": "{time}-da açılır",
+    "everyDay": "Hər gün",
+    "mapLabel": "The Kaffe xəritədə"
+  },
+  "instagram": {
+    "follow": "Instagram-da izlə",
+    "followers": "{count} izləyici"
+  },
+  "footer": {
+    "explore": "Səhifələr",
+    "visit": "Ünvan",
+    "follow": "Bizi izləyin",
+    "rights": "Bütün hüquqlar qorunur.",
+    "backToTop": "Yuxarı"
+  },
+  "notFound": {
+    "title": "Bu fincan boşdur",
+    "text": "Axtardığınız səhifə tapılmadı.",
+    "back": "Ana səhifəyə qayıt"
+  }
+}

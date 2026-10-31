@@ -1,26 +1,202 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+/* Dark mode: "class" strategy (next-themes toggles .dark on <html>) */
+@custom-variant dark (&:where(.dark, .dark *));
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+/* ------------------------------------------------------------------
+   DESIGN TOKENS — The Kaffe Loopie
+   Sampled from the original brand: Instagram logo background (#2C4236),
+   cream lettering, the café's sage walls and wood.
+   ------------------------------------------------------------------ */
+@theme {
+  --color-*: initial;
+  --color-transparent: transparent;
+  --color-current: currentColor;
+  --color-white: #ffffff;
+  --color-black: #000000;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  /* Brand green (logo background) */
+  --color-forest-950: #141f19;
+  --color-forest-900: #1d2c24;
+  --color-forest-800: #2c4236;
+  --color-forest-700: #3a5446;
+  --color-forest-600: #4d6a5a;
+  --color-forest-200: #cfdacf;
+  --color-forest-100: #e6ece4;
+
+  /* Cream / paper (logo lettering) */
+  --color-cream-50: #fbf9f4;
+  --color-cream-100: #f5f1e8;
+  --color-cream-200: #ebe4d5;
+  --color-cream-300: #d9cfbb;
+
+  /* Caramel (wood, desserts) */
+  --color-caramel-400: #d6a066;
+  --color-caramel-500: #c08a4e;
+  --color-caramel-600: #9c6b35;
+
+  --color-ink-900: #1b201d;
+  --color-ink-600: #59615b;
+
+  --color-danger: #b4462f;
+
+  /* Typography */
+  --font-sans: var(--font-manrope), ui-sans-serif, system-ui, sans-serif;
+  --font-hand: var(--font-caveat), cursive;
+
+  --text-hero: clamp(2.75rem, 7vw, 6rem);
+  --text-hero--line-height: 1;
+  --text-hero--letter-spacing: -0.03em;
+  --text-title: clamp(2rem, 4vw, 3.25rem);
+  --text-title--line-height: 1.1;
+  --text-title--letter-spacing: -0.02em;
+  --text-subtitle: clamp(1.375rem, 2.2vw, 1.75rem);
+  --text-subtitle--line-height: 1.25;
+  --text-lead: clamp(1.0625rem, 1.3vw, 1.1875rem);
+  --text-lead--line-height: 1.65;
+
+  /* Shape & depth */
+  --radius-card: 1.5rem;
+  --radius-panel: 2rem;
+  --radius-pill: 999px;
+  --shadow-soft:
+    0 1px 2px rgb(27 32 29 / 0.05), 0 8px 24px -8px rgb(27 32 29 / 0.12);
+  --shadow-lift:
+    0 2px 6px rgb(27 32 29 / 0.06), 0 24px 48px -16px rgb(27 32 29 / 0.25);
+
+  /* Layout */
+  --container-page: 80rem;
+  --spacing-header: 6rem;
+
+  /* Motion */
+  --ease-silk: cubic-bezier(0.22, 1, 0.36, 1);
+  --animate-marquee: marquee 40s linear infinite;
+  --animate-fade-in: fade-in 0.3s var(--ease-silk) both;
+  --animate-rise-in: rise-in 0.45s var(--ease-silk) both;
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+  }
+  @keyframes rise-in {
+    from {
+      opacity: 0;
+      transform: translateY(16px);
+    }
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Semantic tokens (switch with theme) */
+:root {
+  --bg: var(--color-cream-100);
+  --surface: var(--color-white);
+  --surface-2: var(--color-cream-200);
+  --fg: var(--color-ink-900);
+  --muted: var(--color-ink-600);
+  --line: var(--color-cream-300);
+  --brand: var(--color-forest-800);
+  --brand-fg: var(--color-cream-50);
+  --accent: var(--color-caramel-600);
+  color-scheme: light;
+}
+
+.dark {
+  --bg: var(--color-forest-950);
+  --surface: var(--color-forest-900);
+  --surface-2: var(--color-forest-800);
+  --fg: var(--color-cream-100);
+  --muted: var(--color-forest-200);
+  --line: var(--color-forest-700);
+  --brand: var(--color-cream-100);
+  --brand-fg: var(--color-forest-900);
+  --accent: var(--color-caramel-400);
+  color-scheme: dark;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-fg: var(--fg);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-brand: var(--brand);
+  --color-brand-fg: var(--brand-fg);
+  --color-accent: var(--accent);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    overflow-x: clip;
+    scroll-padding-top: var(--spacing-header);
+    -webkit-tap-highlight-color: transparent;
+  }
+  body {
+    @apply bg-bg font-sans text-fg antialiased;
+    overflow-x: clip;
+  }
+  ::selection {
+    @apply bg-forest-800 text-cream-50;
+  }
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-caramel-500;
+  }
+  /* Intro gate, set by an inline script before paint */
+  html[data-intro="none"] #intro-overlay {
+    display: none;
+  }
+  html[data-intro="show"] body {
+    overflow: hidden;
+  }
+}
+
+@utility container-page {
+  margin-inline: auto;
+  width: 100%;
+  max-width: var(--container-page);
+  padding-inline: 1rem;
+  @media (width >= 48rem) {
+    padding-inline: 2rem;
+  }
+}
+
+@utility mask-fade-x {
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 6%,
+    black 94%,
+    transparent
+  );
+}
+
+@utility scrollbar-none {
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }

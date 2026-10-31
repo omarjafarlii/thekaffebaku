@@ -1,0 +1,190 @@
+{
+  "meta": {
+    "title": "The Kaffe Loopie — Coffee. Brunch. Sweet Moments. | Баку",
+    "description": "Кофе, завтраки весь день и домашние десерты рядом с Ичеришехер. 4.9 ★ в Google. Ежедневно 07:00–23:00. Можно с питомцами."
+  },
+  "nav": {
+    "menu": "Меню",
+    "about": "О нас",
+    "reviews": "Отзывы",
+    "visit": "Адрес",
+    "contact": "Бронь",
+    "order": "Заказать",
+    "openMenu": "Открыть меню",
+    "closeMenu": "Закрыть меню",
+    "skip": "Перейти к содержанию",
+    "language": "Язык",
+    "themeLight": "Светлая тема",
+    "themeDark": "Тёмная тема",
+    "home": "Главная"
+  },
+  "intro": { "skip": "Пропустить" },
+  "placeholder": { "price": "[ЦЕНА]", "email": "[E-MAIL]" },
+  "hero": {
+    "eyebrow": "Ичеришехер · Баку",
+    "ctaMenu": "Смотреть меню",
+    "ctaDirections": "Маршрут",
+    "rating": "{count} отзывов в Google",
+    "scroll": "листайте вниз"
+  },
+  "news": {
+    "eyebrow": "новинки",
+    "title": "На этой неделе",
+    "halloweenTitle": "Halloween at The KAFFE",
+    "halloweenText": "Сезонный напиток октября.",
+    "caramelTitle": "Caramel Kiss",
+    "caramelText": "Познакомьтесь с вашим новым фаворитом.",
+    "sezarTitle": "Цезарь-ролл",
+    "sezarText": "Цезарь в лаваше со свежим салатом — в меню завтраков."
+  },
+  "split": {
+    "dessertsEyebrow": "Signature Desserts",
+    "dessertsTitle": "Домашние десерты",
+    "dessertsText": "Тирамису, панна-котта, магнолия-пудинг и энергетические шарики. Гости называют наш тирамису «лучшим, что я пробовал».",
+    "dessertsCta": "Смотреть десерты",
+    "breakfastEyebrow": "All-Day Breakfast",
+    "breakfastTitle": "Завтрак не смотрит на часы",
+    "breakfastText": "Шакшука, Rice Bowl, Цезарь-ролл и круассаны — с 07:00 до 23:00, весь день.",
+    "breakfastCta": "Меню завтраков"
+  },
+  "why": {
+    "eyebrow": "почему мы?",
+    "title": "Уютно, как дома",
+    "coffeeTitle": "Свежий кофе в каждой чашке",
+    "coffeeLabel": "Кофе",
+    "catsTitle": "Котики, которых мы взяли с улицы",
+    "catsLabel": "Котики",
+    "atmosphereTitle": "Тёплая, уютная атмосфера",
+    "atmosphereLabel": "Атмосфера",
+    "cityTitle": "В шаге от Старого города",
+    "cityLabel": "Место"
+  },
+  "menu": {
+    "eyebrow": "меню",
+    "title": "Наше меню",
+    "search": "Поиск…",
+    "searchLabel": "Поиск по меню",
+    "all": "Все",
+    "cat_drinks": "Напитки",
+    "cat_breakfast": "Завтраки",
+    "cat_desserts": "Десерты",
+    "tag_vegan": "Веган",
+    "tag_sugarFree": "Без сахара",
+    "tag_new": "Новинка",
+    "tag_popular": "Популярное",
+    "empty": "Ничего не найдено.",
+    "sizes": "Размер",
+    "ingredients": "Состав",
+    "close": "Закрыть",
+    "noDescription": "Подробности скоро появятся.",
+    "currency": "₼",
+    "fullMenu": "Полное меню в Instagram",
+    "order": "Заказать в Bolt Food"
+  },
+  "about": {
+    "eyebrow": "о нас",
+    "title": "Fresh coffee, homemade desserts, and a place that feels like home in Baku.",
+    "p1": "The Kaffe Loopie — небольшая уютная кофейня на улице Истиглалият, в шаге от Ичеришехер. Здесь день начинается с кофе, завтрак длится весь день, а десерты готовятся у нас.",
+    "p2": "У нас можно с питомцами: мы берём котиков с улицы, и они часто составляют компанию гостям. 🐾",
+    "statRating": "рейтинг Google",
+    "statReviews": "отзывов",
+    "statFollowers": "подписчиков в Instagram",
+    "statHours": "каждый день"
+  },
+  "reviews": {
+    "eyebrow": "отзывы",
+    "title": "Что говорят гости",
+    "basedOn": "На основе {count} отзывов",
+    "write": "Оставить отзыв в Google",
+    "source_google": "Google",
+    "source_instagram": "Instagram",
+    "prev": "Назад",
+    "next": "Вперёд"
+  },
+  "rewards": {
+    "eyebrow": "лояльность",
+    "title": "The Kaffe Rewards",
+    "soon": "Скоро",
+    "text": "Копите звёзды с каждой чашкой и получайте любимый десерт в подарок. Программа готовится — первыми расскажем в Instagram.",
+    "perk1": "Звёзды за каждый заказ",
+    "perk2": "Подарок на день рождения",
+    "perk3": "Новинки — вам первым",
+    "notify": "Подписаться в Instagram"
+  },
+  "contact": {
+    "eyebrow": "контакты",
+    "title": "Забронируйте столик или оставьте отзыв",
+    "tabReserve": "Бронь столика",
+    "tabFeedback": "Оставить отзыв",
+    "callInstead": "Или позвоните:"
+  },
+  "feedback": {
+    "name": "Ваше имя",
+    "email": "E-mail",
+    "rating": "Ваша оценка",
+    "message": "Сообщение",
+    "submit": "Отправить",
+    "sending": "Отправка…",
+    "successTitle": "Спасибо!",
+    "successText": "Ваше сообщение у нас. Ждём вас на следующую чашку.",
+    "again": "Новое сообщение"
+  },
+  "reservation": {
+    "date": "Дата",
+    "time": "Время",
+    "guests": "Гостей",
+    "name": "Ваше имя",
+    "phone": "Телефон",
+    "note": "Комментарий (необязательно)",
+    "submit": "Забронировать",
+    "sending": "Отправка…",
+    "successTitle": "Заявка принята",
+    "successText": "{name}, мы получили заявку на {guests} гостей, {date} в {time}. Скоро позвоним для подтверждения.",
+    "again": "Новая бронь",
+    "less": "Меньше",
+    "more": "Больше"
+  },
+  "errors": {
+    "name": "Введите не менее 2 букв",
+    "email": "Введите корректный e-mail",
+    "rating": "Выберите оценку",
+    "message": "Напишите не менее 10 символов",
+    "phone": "Введите корректный номер телефона",
+    "date": "Выберите сегодняшнюю или более позднюю дату",
+    "time": "Выберите время",
+    "guests": "1–12 гостей",
+    "server": "Произошла ошибка. Попробуйте позже."
+  },
+  "visit": {
+    "eyebrow": "адрес",
+    "title": "Приходите в гости",
+    "address": "Адрес",
+    "contact": "Контакты",
+    "hours": "Часы работы",
+    "directions": "Проложить маршрут",
+    "call": "Позвонить",
+    "order": "Bolt Food",
+    "openNow": "Сейчас открыто",
+    "closed": "Закрыто",
+    "closesAt": "закроется в {time}",
+    "opensAt": "откроется в {time}",
+    "everyDay": "Ежедневно",
+    "mapLabel": "The Kaffe на карте"
+  },
+  "instagram": {
+    "follow": "Подписаться в Instagram",
+    "followers": "{count} подписчиков"
+  },
+  "footer": {
+    "explore": "Разделы",
+    "visit": "Адрес",
+    "follow": "Мы в соцсетях",
+    "rights": "Все права защищены.",
+    "backToTop": "Наверх"
+  },
+  "notFound": {
+    "title": "Эта чашка пуста",
+    "text": "Страница не найдена.",
+    "back": "На главную"
+  }
+}

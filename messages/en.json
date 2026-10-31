@@ -1,0 +1,190 @@
+{
+  "meta": {
+    "title": "The Kaffe Loopie — Coffee. Brunch. Sweet Moments. | Baku",
+    "description": "Coffee, all-day breakfast and homemade desserts next to Baku's Old City. 4.9 ★ on Google. Open daily 07:00–23:00. Pet friendly."
+  },
+  "nav": {
+    "menu": "Menu",
+    "about": "About",
+    "reviews": "Reviews",
+    "visit": "Visit",
+    "contact": "Reserve",
+    "order": "Order",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "skip": "Skip to content",
+    "language": "Language",
+    "themeLight": "Light mode",
+    "themeDark": "Dark mode",
+    "home": "Home"
+  },
+  "intro": { "skip": "Skip" },
+  "placeholder": { "price": "[PRICE]", "email": "[EMAIL]" },
+  "hero": {
+    "eyebrow": "Icherisheher · Baku",
+    "ctaMenu": "View the menu",
+    "ctaDirections": "Directions",
+    "rating": "{count} Google reviews",
+    "scroll": "scroll down"
+  },
+  "news": {
+    "eyebrow": "what's new",
+    "title": "This week at The Kaffe",
+    "halloweenTitle": "Halloween at The KAFFE",
+    "halloweenText": "October's seasonal drink.",
+    "caramelTitle": "Caramel Kiss",
+    "caramelText": "Meet your new favourite.",
+    "sezarTitle": "Caesar roll",
+    "sezarText": "Caesar in flatbread with fresh salad — on the breakfast menu."
+  },
+  "split": {
+    "dessertsEyebrow": "Signature Desserts",
+    "dessertsTitle": "Homemade desserts",
+    "dessertsText": "Tiramisu, panna cotta, magnolia pudding and energy balls. Our guests call the tiramisu \"the best I ever had\".",
+    "dessertsCta": "See desserts",
+    "breakfastEyebrow": "All-Day Breakfast",
+    "breakfastTitle": "Breakfast doesn't watch the clock",
+    "breakfastText": "Shakshuka, Rice Bowl, Caesar roll and croissants — from 07:00 to 23:00, all day long.",
+    "breakfastCta": "Breakfast menu"
+  },
+  "why": {
+    "eyebrow": "why us?",
+    "title": "Cosy, just like home",
+    "coffeeTitle": "Fresh coffee in every cup",
+    "coffeeLabel": "Coffee",
+    "catsTitle": "Cats we adopted from the street",
+    "catsLabel": "Cats",
+    "atmosphereTitle": "Warm, cosy atmosphere",
+    "atmosphereLabel": "Atmosphere",
+    "cityTitle": "One step from the Old City",
+    "cityLabel": "Location"
+  },
+  "menu": {
+    "eyebrow": "menu",
+    "title": "Our menu",
+    "search": "Search…",
+    "searchLabel": "Search the menu",
+    "all": "All",
+    "cat_drinks": "Drinks",
+    "cat_breakfast": "Breakfast",
+    "cat_desserts": "Desserts",
+    "tag_vegan": "Vegan",
+    "tag_sugarFree": "Sugar-free",
+    "tag_new": "New",
+    "tag_popular": "Popular",
+    "empty": "Nothing found.",
+    "sizes": "Size",
+    "ingredients": "Ingredients",
+    "close": "Close",
+    "noDescription": "More details coming soon.",
+    "currency": "₼",
+    "fullMenu": "Full menu on Instagram",
+    "order": "Order on Bolt Food"
+  },
+  "about": {
+    "eyebrow": "about us",
+    "title": "Fresh coffee, homemade desserts, and a place that feels like home in Baku.",
+    "p1": "The Kaffe Loopie is a small, warm coffee house on Istiqlaliyyat Street, one step from Icherisheher. Here the day starts with coffee, breakfast goes on all day, and the desserts are made in-house.",
+    "p2": "We're pet friendly: we adopt our cats from the street, and they often keep our guests company. 🐾",
+    "statRating": "Google rating",
+    "statReviews": "reviews",
+    "statFollowers": "Instagram followers",
+    "statHours": "every day"
+  },
+  "reviews": {
+    "eyebrow": "reviews",
+    "title": "What our guests say",
+    "basedOn": "Based on {count} reviews",
+    "write": "Write a Google review",
+    "source_google": "Google",
+    "source_instagram": "Instagram",
+    "prev": "Previous",
+    "next": "Next"
+  },
+  "rewards": {
+    "eyebrow": "loyalty",
+    "title": "The Kaffe Rewards",
+    "soon": "Coming soon",
+    "text": "Collect stars with every cup and earn your favourite dessert on us. The programme is brewing — we'll announce it first on Instagram.",
+    "perk1": "Stars on every order",
+    "perk2": "A birthday treat",
+    "perk3": "New items first",
+    "notify": "Follow on Instagram"
+  },
+  "contact": {
+    "eyebrow": "contact",
+    "title": "Book a table or leave feedback",
+    "tabReserve": "Reserve a table",
+    "tabFeedback": "Leave feedback",
+    "callInstead": "Or call us:"
+  },
+  "feedback": {
+    "name": "Your name",
+    "email": "Email",
+    "rating": "Your rating",
+    "message": "Your message",
+    "submit": "Send",
+    "sending": "Sending…",
+    "successTitle": "Thank you!",
+    "successText": "Your message reached us. We're looking forward to your next cup.",
+    "again": "New message"
+  },
+  "reservation": {
+    "date": "Date",
+    "time": "Time",
+    "guests": "Guests",
+    "name": "Your name",
+    "phone": "Phone",
+    "note": "Note (optional)",
+    "submit": "Reserve",
+    "sending": "Sending…",
+    "successTitle": "Request received",
+    "successText": "{name}, we've received your request for {guests} on {date} at {time}. We'll call you shortly to confirm.",
+    "again": "New reservation",
+    "less": "Decrease",
+    "more": "Increase"
+  },
+  "errors": {
+    "name": "Enter at least 2 letters",
+    "email": "Enter a valid email",
+    "rating": "Choose a rating",
+    "message": "Write at least 10 characters",
+    "phone": "Enter a valid phone number",
+    "date": "Choose today or a later date",
+    "time": "Choose a time",
+    "guests": "1–12 guests",
+    "server": "Something went wrong. Please try again later."
+  },
+  "visit": {
+    "eyebrow": "visit",
+    "title": "Come and see us",
+    "address": "Address",
+    "contact": "Contact",
+    "hours": "Opening hours",
+    "directions": "Get directions",
+    "call": "Call",
+    "order": "Bolt Food",
+    "openNow": "Open now",
+    "closed": "Closed",
+    "closesAt": "closes at {time}",
+    "opensAt": "opens at {time}",
+    "everyDay": "Every day",
+    "mapLabel": "The Kaffe on the map"
+  },
+  "instagram": {
+    "follow": "Follow on Instagram",
+    "followers": "{count} followers"
+  },
+  "footer": {
+    "explore": "Pages",
+    "visit": "Visit",
+    "follow": "Follow us",
+    "rights": "All rights reserved.",
+    "backToTop": "Top"
+  },
+  "notFound": {
+    "title": "This cup is empty",
+    "text": "The page you're looking for wasn't found.",
+    "back": "Back to home"
+  }
+}
