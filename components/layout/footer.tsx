@@ -2,7 +2,7 @@ import { useLocale, useTranslations } from "next-intl";
 import { Logo } from "@/components/brand/logo";
 import { SocialLinks } from "@/components/layout/social-links";
 import { info } from "@/data/info";
-import { NAV_ITEMS } from "@/lib/nav";
+import { NAV_ITEMS, homeAnchor } from "@/lib/nav";
 import { t as tr } from "@/lib/i18n-data";
 
 export function Footer() {
@@ -29,7 +29,10 @@ export function Footer() {
           <ul className="flex flex-col gap-2.5 text-sm">
             {NAV_ITEMS.map((i) => (
               <li key={i.key}>
-                <a href={i.href} className="hover:text-white hover:underline">
+                <a
+                  href={homeAnchor(locale, i.href)}
+                  className="hover:text-white hover:underline"
+                >
                   {tn(i.key)}
                 </a>
               </li>

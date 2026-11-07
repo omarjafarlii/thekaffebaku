@@ -2,14 +2,14 @@
 
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { Menu as MenuIcon, X } from "lucide-react";
 import { Logo } from "@/components/brand/logo";
 import { LocaleSwitcher } from "@/components/layout/locale-switcher";
 import { ThemeToggle } from "@/components/layout/theme-toggle";
 import { SocialLinks } from "@/components/layout/social-links";
 import { buttonVariants } from "@/components/ui/button-variants";
-import { NAV_ITEMS } from "@/lib/nav";
+import { NAV_ITEMS, homeAnchor } from "@/lib/nav";
 import { info } from "@/data/info";
 import { cn } from "@/lib/utils";
 
@@ -19,6 +19,7 @@ import { cn } from "@/lib/utils";
  */
 export function Header() {
   const t = useTranslations("nav");
+  const locale = useLocale();
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
 
@@ -54,7 +55,7 @@ export function Header() {
           )}
         >
           <a
-            href="#top"
+            href={homeAnchor(locale, "#top")}
             aria-label={t("home")}
             className="shrink-0 rounded-pill"
           >
@@ -67,7 +68,7 @@ export function Header() {
               {NAV_ITEMS.map((item) => (
                 <li key={item.key}>
                   <a
-                    href={item.href}
+                    href={homeAnchor(locale, item.href)}
                     className="rounded-pill px-3.5 py-2 text-sm font-semibold text-fg/80 transition hover:bg-surface-2 hover:text-fg"
                   >
                     {t(item.key)}
@@ -81,7 +82,7 @@ export function Header() {
             <LocaleSwitcher className="hidden md:flex" />
             <ThemeToggle className="hidden md:grid" />
             <a
-              href="#menu"
+              href={homeAnchor(locale, "#menu")}
               className={cn(
                 buttonVariants({ size: "md" }),
                 "ml-1 hidden sm:inline-flex",
@@ -139,7 +140,7 @@ export function Header() {
                     transition={{ delay: 0.05 + i * 0.05 }}
                   >
                     <a
-                      href={item.href}
+                      href={homeAnchor(locale, item.href)}
                       onClick={() => setOpen(false)}
                       className="block py-2 text-4xl font-bold tracking-tight"
                     >

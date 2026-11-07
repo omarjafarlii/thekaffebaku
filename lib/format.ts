@@ -141,3 +141,8 @@ export function parseIsoDate(iso: string) {
   const [year, month, day] = iso.split("-").map(Number);
   return { year, month, day };
 }
+
+/** "45 ₼" / "6,50 ₼" — whole manats without decimals, otherwise two. */
+export function formatPrice(value: number, locale: string) {
+  return `${formatNumber(value, locale, Number.isInteger(value) ? 0 : 2)} ₼`;
+}

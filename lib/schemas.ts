@@ -40,3 +40,34 @@ export type ReservationInput = z.infer<typeof reservationSchema>;
 
 export type ActionResult =
   { ok: true } | { ok: false; error: "validation" | "server" };
+
+export const PAYMENT_METHODS = ["card", "cash"] as const;
+export type PaymentMethod = (typeof PAYMENT_METHODS)[number];
+
+/** Masterclass ticket checkout. Price is never trusted from the client. */
+export const bookingSchema = z.object({
+  slug: z.string().min(1).max(80),
+  quantity: z.number("quantity").int().min(1, "quantity").max(6, "quantity"),
+  name: z.string().trim().min(2, "name").max(80, "name"),
+  phone: z.string().trim().regex(phoneRegex, "phone"),
+  email: z.email("email"),
+  payment: z.enum(PAYMENT_METHODS, "payment"),
+  note: z.string().trim().max(500).optional(),
+  agree: z.literal(true, "agree"),
+  /** language of the receipt e-mail / WhatsApp message */
+  locale: z.enum(["az", "en", "ru"]),
+  company: z.string().max(0).optional(),
+});
+export type BookingInput = z.infer<typeof bookingSchema>;
+
+export type BookingResult =
+  | {
+      ok: true;
+      code: string;
+      total: number;
+      /** which receipt channels went out */
+      sent: { email: boolean; whatsapp: boolean };
+      /** printable receipt (same design as the e-mail) */
+      receiptHtml: string;
+    }
+  | { ok: false; error: "validation" | "server" | "soldOut" | "notFound" };

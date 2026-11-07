@@ -8,6 +8,7 @@ import { Marquee } from "@/components/sections/marquee";
 import { SplitFeatures } from "@/components/sections/split-features";
 import { WhyUs } from "@/components/sections/why-us";
 import { Menu } from "@/components/sections/menu";
+import { Masterclasses } from "@/components/sections/masterclasses";
 import { About } from "@/components/sections/about";
 import { Reviews } from "@/components/sections/reviews";
 import { Rewards } from "@/components/sections/rewards";
@@ -15,6 +16,9 @@ import { Contact } from "@/components/sections/contact";
 import { Visit } from "@/components/sections/visit";
 import { Instagram } from "@/components/sections/instagram";
 import { JsonLd } from "@/components/seo/json-ld";
+
+/** Re-render hourly so past masterclasses drop off and seats stay current. */
+export const revalidate = 3600;
 
 export default async function HomePage({ params }: PageProps<"/[locale]">) {
   const { locale } = await params;
@@ -31,7 +35,8 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
         <div className="py-20 md:py-28">
           <SplitFeatures />
         </div>
-        <Menu />
+        <Menu preview />
+        <Masterclasses />
         <WhyUs />
         <About />
         <Reviews />

@@ -93,8 +93,16 @@ export const info = {
     delivery: true, // Bolt Food
   },
 
-  /** Loyalty programme — null = not confirmed, section shows "Coming soon" */
-  loyalty: null as null | { description: Localized },
+  /**
+   * Loyalty card on WalletPlus: "8 kofe al, 9-cu hədiyyə".
+   * Sign-up is phone number + SMS code on the WalletPlus page.
+   */
+  loyalty: {
+    signupUrl: "https://thekaffe.walletplus.az/signup?id=18",
+    termsUrl: "https://thekaffe.walletplus.az/terms.php",
+    /** coffees to buy; the next one is free */
+    stamps: 8,
+  },
 } as const;
 
 export type Info = typeof info;

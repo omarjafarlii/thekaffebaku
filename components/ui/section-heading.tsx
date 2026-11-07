@@ -9,6 +9,7 @@ export function SectionHeading({
   className,
   children,
   onDark,
+  level = 2,
 }: {
   eyebrow: string;
   title: string;
@@ -18,7 +19,10 @@ export function SectionHeading({
   children?: React.ReactNode;
   /** lighter eyebrow colour for dark backgrounds */
   onDark?: boolean;
+  /** 1 on stand-alone pages (/menu, /masterclass), 2 inside the home page */
+  level?: 1 | 2;
 }) {
+  const H = level === 1 ? "h1" : "h2";
   return (
     <div
       className={cn(
@@ -35,9 +39,9 @@ export function SectionHeading({
       >
         {eyebrow}
       </span>
-      <h2 id={id} className="max-w-3xl text-title font-bold text-balance">
+      <H id={id} className="max-w-3xl text-title font-bold text-balance">
         {title}
-      </h2>
+      </H>
       {children ? (
         <div className="mt-2 max-w-2xl text-lead text-muted">{children}</div>
       ) : null}

@@ -1,7 +1,14 @@
 "use server";
 
+import { randomUUID } from "node:crypto";
 import { Resend } from "resend";
+import { getMasterclass } from "@/data/masterclasses";
+import { receiptEmail, sendReceipts, type Receipt } from "@/lib/receipt";
 import {
+  bakuToday,
+  bookingSchema,
+  type BookingInput,
+  type BookingResult,
   feedbackSchema,
   reservationSchema,
   type ActionResult,
@@ -78,6 +85,77 @@ export async function submitFeedback(
     console.error("[feedback]", e);
     return { ok: false, error: "server" };
   }
+}
+
+/**
+ * Masterclass ticket order. The total is computed here from data/masterclasses
+ * (never trusted from the browser). Online card payment needs a merchant
+ * account with a payment provider; until one is connected, card orders are
+ * recorded and the café sends a payment link manually.
+ */
+export async function submitBooking(
+  input: BookingInput,
+): Promise<BookingResult> {
+  const parsed = bookingSchema.safeParse(input);
+  if (!parsed.success || parsed.data.company)
+    return { ok: false, error: "validation" };
+  const d = parsed.data;
+
+  const mc = getMasterclass(d.slug);
+  if (!mc || mc.date < bakuToday()) return { ok: false, error: "notFound" };
+  if (d.quantity > mc.seatsLeft) return { ok: false, error: "soldOut" };
+
+  const total = mc.price * d.quantity;
+  const code = `TK-${randomUUID().slice(0, 6).toUpperCase()}`;
+
+  try {
+    await deliver(
+      `Masterclass ${code} — ${mc.title.az} · ${d.quantity} × ${mc.price} AZN`,
+      [
+        ["Order", code],
+        ["Masterclass", mc.title.az],
+        ["Date", `${mc.date} ${mc.start}–${mc.end}`],
+        ["Tickets", String(d.quantity)],
+        ["Total", `${total} AZN`],
+        [
+          "Payment",
+          d.payment === "card" ? "Card online (send link)" : "At the café",
+        ],
+        ["Name", d.name],
+        ["Phone", d.phone],
+        ["Email", d.email],
+        ["Note", d.note || "—"],
+      ],
+      d.email,
+    );
+  } catch (e) {
+    console.error("[booking]", e);
+    return { ok: false, error: "server" };
+  }
+
+  // Receipt to the guest (e-mail + WhatsApp). Card orders stay "pending"
+  // until a payment provider confirms them (see lib/receipt.ts).
+  const receipt: Receipt = {
+    code,
+    mc,
+    quantity: d.quantity,
+    total,
+    payment: d.payment,
+    status: d.payment === "card" ? "pending" : "atVenue",
+    name: d.name,
+    phone: d.phone,
+    email: d.email,
+    locale: d.locale,
+    createdAt: new Date(),
+  };
+  const sent = await sendReceipts(receipt);
+  return {
+    ok: true,
+    code,
+    total,
+    sent,
+    receiptHtml: receiptEmail(receipt).html,
+  };
 }
 
 export async function submitReservation(
